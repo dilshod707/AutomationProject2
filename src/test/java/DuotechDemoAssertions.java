@@ -12,7 +12,6 @@ public class DuotechDemoAssertions {
         Assert.assertEquals("hello", "HELLO");
 
 
-
         //Step 1: Navigate to URL
         WebDriver driver = new ChromeDriver();
         driver.get("http://duotify.us-east-2.elasticbeanstalk.com/register.php");
@@ -21,11 +20,6 @@ public class DuotechDemoAssertions {
         //Step 2: Verify the the title is "Welcome to Duotify!"
         String title = driver.getTitle();
         System.out.println(title);
-
-
-
-        WebElement signUpLink = driver.findElement(By.linkText("Signup here."));
-        signUpLink.click();
 
     }
 }
